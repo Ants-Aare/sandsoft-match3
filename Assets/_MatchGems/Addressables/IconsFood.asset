@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: IconsFood
+  m_EditorClassIdentifier: 
+  m_GroupName: IconsFood
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1b62a4b5821a644b3a48bdae574f0f7a
+  m_SerializeEntries:
+  - m_GUID: d7087b741c8e6d743b19ed759f05894b
+    m_Address: Match3_Icon_07
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 640cee5f94db38348926a862b18cf03b
+    m_Address: Match3_Icon_05
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c31f4a62ea2298c489149fa0784e1acb
+    m_Address: Match3_Icon_06
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 369e97ca43dc341498c263118db2697c
+    m_Address: Match3_Icon_08
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 50bf4f8860dcc3c47bca629c38a61a54
+    m_Address: Match3_Icon_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c04e4ecbbbcbbc94faf275fe25dc7415
+    m_Address: Match3_Icon_04
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a99ffbf755b505943bfcdc76c02cd724
+    m_Address: Match3_Icon_03
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2201e5475678f5243b215b3df40aa15f
+    m_Address: Match3_Icon_02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e9b1e34a9468c4228a5c354a45dee008, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c1249f39b64d24a1e9f28039c2c9eeb2, type: 2}
+    - {fileID: 11400000, guid: 50e6260131ba4484a809194579b272ef, type: 2}

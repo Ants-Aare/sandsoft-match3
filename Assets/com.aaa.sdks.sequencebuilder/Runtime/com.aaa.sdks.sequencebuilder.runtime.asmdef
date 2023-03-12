@@ -1,0 +1,17 @@
+{
+    "name": "com.aaa.sdks.sequencebuilder.runtime",
+    "rootNamespace": "AAA.SDKs.SequenceBuilder.Runtime",
+    "references": [
+        "GUID:0ecd7cde43d7e4ed397f6f60a3c89164",
+        "GUID:776d03a35f1b52c4a9aed9f56d7b4229"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

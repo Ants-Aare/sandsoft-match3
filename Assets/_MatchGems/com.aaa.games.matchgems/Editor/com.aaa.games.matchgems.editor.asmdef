@@ -1,0 +1,16 @@
+{
+    "name": "com.aaa.games.matchgems.editor",
+    "rootNamespace": "AAA.Games.MatchGems.Editor",
+    "references": [
+        "GUID:046fc8294aa34838bca1b6ef6be995b7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

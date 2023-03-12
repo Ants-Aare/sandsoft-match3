@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IconsFood
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 50bf4f8860dcc3c47bca629c38a61a54, type: 3}
+    - {fileID: 2800000, guid: 2201e5475678f5243b215b3df40aa15f, type: 3}
+    - {fileID: 2800000, guid: a99ffbf755b505943bfcdc76c02cd724, type: 3}
+    - {fileID: 2800000, guid: c04e4ecbbbcbbc94faf275fe25dc7415, type: 3}
+    - {fileID: 2800000, guid: 640cee5f94db38348926a862b18cf03b, type: 3}
+    - {fileID: 2800000, guid: c31f4a62ea2298c489149fa0784e1acb, type: 3}
+    - {fileID: 2800000, guid: d7087b741c8e6d743b19ed759f05894b, type: 3}
+    - {fileID: 2800000, guid: 369e97ca43dc341498c263118db2697c, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c31f4a62ea2298c489149fa0784e1acb, type: 3}
+  - {fileID: 21300000, guid: d7087b741c8e6d743b19ed759f05894b, type: 3}
+  - {fileID: 21300000, guid: 2201e5475678f5243b215b3df40aa15f, type: 3}
+  - {fileID: 21300000, guid: a99ffbf755b505943bfcdc76c02cd724, type: 3}
+  - {fileID: 21300000, guid: 50bf4f8860dcc3c47bca629c38a61a54, type: 3}
+  - {fileID: 21300000, guid: 369e97ca43dc341498c263118db2697c, type: 3}
+  - {fileID: 21300000, guid: c04e4ecbbbcbbc94faf275fe25dc7415, type: 3}
+  - {fileID: 21300000, guid: 640cee5f94db38348926a862b18cf03b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Match3_Icon_06
+  - Match3_Icon_07
+  - Match3_Icon_02
+  - Match3_Icon_03
+  - Match3_Icon_01
+  - Match3_Icon_08
+  - Match3_Icon_04
+  - Match3_Icon_05
+  m_RenderDataMap: {}
+  m_Tag: IconsFood
+  m_IsVariant: 0

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: MatchGemsViews
+  m_EditorClassIdentifier: 
+  m_GroupName: MatchGemsViews
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9482c3d321ab14d888b29329aef9c566
+  m_SerializeEntries:
+  - m_GUID: 09e729368aa994967ba008029b97ef7d
+    m_Address: Assets/Prefabs/Views/GemView.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 301167f30aa5f4cf9a3f47556221a42a
+    m_Address: Assets/_MatchGems/Prefabs/MatchGemsCanvasCave.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4153a43ac254d45c6b02e6c2b80fc7ca
+    m_Address: Assets/_MatchGems/Prefabs/MatchGemsCanvasTable.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 931faf1735f8c42599cbc1cd758b4e78
+    m_Address: Assets/_MatchGems/Prefabs/GemViewFruity.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e9b1e34a9468c4228a5c354a45dee008, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3c18e536d148b4065b24c0bdac24bc48, type: 2}
+    - {fileID: 11400000, guid: 64a33073bfa384e2785270e9fa76da8d, type: 2}
