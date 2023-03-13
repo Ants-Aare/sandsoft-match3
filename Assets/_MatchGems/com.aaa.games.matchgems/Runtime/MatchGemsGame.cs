@@ -79,7 +79,8 @@ namespace AAA.Games.MatchGems.Runtime
             _refillingSystem.OnNewTileCreated += _gemGridView.CreateNewView;
                 
             _gemGrid.OnGridChanged += SequencePlayer.StartSequencesNextFrame;
-            
+            SequencePlayer.AnimationsFinished += _matchingSystem.ResolveMatches;
+
             _gemGridView.Initialize(_gemGrid, gemViewProvider, _gemInputSystem);
         }
 

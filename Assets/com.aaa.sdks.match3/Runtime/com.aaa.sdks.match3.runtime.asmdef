@@ -1,5 +1,5 @@
 {
-    "name": "com.aaa.sdks.match3",
+    "name": "com.aaa.sdks.match3.runtime",
     "rootNamespace": "AAA.SDKs.Match3.Runtime",
     "references": [
         "GUID:0ecd7cde43d7e4ed397f6f60a3c89164",

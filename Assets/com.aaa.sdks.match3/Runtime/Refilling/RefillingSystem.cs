@@ -8,6 +8,7 @@ namespace AAA.SDKs.Match3.Runtime.Refilling
         where T : ITypeProvider, IGridPositionProvider, IRefillable
     {
         public event Action<T> OnNewTileCreated;
+        public event Action OnRefillFinished;
 
         private readonly ITileProvider<T> _tileProvider;
         private readonly ITileFactory<T> _tileFactory;
@@ -41,6 +42,8 @@ namespace AAA.SDKs.Match3.Runtime.Refilling
                     }
                 }
             }
+            _tileProvider.InvokeOnGridChanged();
+            OnRefillFinished?.Invoke();
         }
     }
 }

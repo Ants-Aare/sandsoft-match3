@@ -12,6 +12,7 @@ namespace AAA.SDKs.SequenceBuilder.Runtime
     public static class SequencePlayer
     {
         public static float PauseDuration = 0.1f;
+        public static Action AnimationsFinished;
 
         private static Sequence _currentlyPlayingSequence;
         private static readonly List<ISequenceBuilder> SequenceBuilders = new();
@@ -27,12 +28,13 @@ namespace AAA.SDKs.SequenceBuilder.Runtime
         {
             if (_hasStartedSequences)
                 return;
-            WaitFrameAndStartAllSequences().RunAsync();
             _hasStartedSequences = true;
+            WaitFrameAndStartAllSequences().RunAsync();
         }
 
         private static async Task WaitFrameAndStartAllSequences()
         {
+            await Task.Yield();
             await Task.Yield();
             _hasStartedSequences = false;
             StartAllSequences();
@@ -45,7 +47,7 @@ namespace AAA.SDKs.SequenceBuilder.Runtime
                 Debug.Log("No Sequences to play");
                 return;
             }
-            StopAllSequences();
+            // StopAllSequences();
 
             _currentlyPlayingSequence = DOTween.Sequence();
 
@@ -61,7 +63,7 @@ namespace AAA.SDKs.SequenceBuilder.Runtime
                 var currentPriority = SequenceBuilders[i].GetPriority();
                 if (currentPriority > previousPriority)
                 {
-                    if (i != 0)
+                    if (i != 0 && SequenceBuilders[i].ShouldAddPauseBetweenPreviousSequence())
                         _currentlyPlayingSequence.AppendInterval(PauseDuration);
                     _currentlyPlayingSequence.Append(sequence);
 
@@ -73,11 +75,14 @@ namespace AAA.SDKs.SequenceBuilder.Runtime
                 }
             }
 
+            _currentlyPlayingSequence.AppendCallback(()=> AnimationsFinished?.Invoke());
+
             SequenceBuilders.Clear();
         }
 
         public static void StopAllSequences()
         {
+            Debug.Log("Stopping All Sequences");
             _currentlyPlayingSequence?.Kill(true);
         }
     }

@@ -1,4 +1,3 @@
-using System;
 using AAA.Games.MatchGems.Runtime.GemViewProviders;
 using AAA.Games.MatchGems.Runtime.Input;
 using AAA.SDKs.SequenceBuilder.Runtime;
@@ -117,58 +116,5 @@ namespace AAA.Games.MatchGems.Runtime.Views
             _inputReceiver.ReceiveOnEndDrag(eventData, Gem);
             icon.DOLocalMove(Vector3.zero, 0.1f);
         }
-    }
-
-    public readonly struct GemSwapSequenceBuilder : ISequenceBuilder
-    {
-        private readonly Transform _transform;
-        private readonly Vector3 _targetPosition;
-
-        public GemSwapSequenceBuilder(Transform transform, Vector3 targetPosition)
-        {
-            _transform = transform;
-            _targetPosition = targetPosition;
-        }
-
-        public Tween BuildSequence()
-            => _transform.DOLocalMove(_targetPosition, 0.2f)
-                .SetEase(Ease.OutBack);
-
-        public int GetPriority() => 100;
-    }
-
-    public class GemRefillSequenceBuilder : ISequenceBuilder
-    {
-        private readonly Transform _transform;
-
-        public GemRefillSequenceBuilder(Transform transform)
-        {
-            _transform = transform;
-            _transform.localScale = Vector3.zero;
-        }
-
-        public Tween BuildSequence()
-            => _transform.DOScale(Vector3.one, 0.3f)
-                .SetEase(Ease.OutBack);
-        public int GetPriority() => 300;
-    }
-
-    public readonly struct GemDestroySequenceBuilder : ISequenceBuilder
-    {
-        private readonly Transform _transform;
-        private readonly Action _onComplete;
-
-        public GemDestroySequenceBuilder(Transform transform, Action onComplete)
-        {
-            _transform = transform;
-            _onComplete = onComplete;
-        }
-
-        public Tween BuildSequence()
-            => _transform.DOScale(Vector3.zero, 0.2f)
-                .SetEase(Ease.InBack)
-                .OnComplete(_onComplete.Invoke);
-
-        public int GetPriority() => 200;
     }
 }

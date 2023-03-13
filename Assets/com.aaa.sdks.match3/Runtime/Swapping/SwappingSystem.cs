@@ -24,6 +24,7 @@ namespace AAA.SDKs.Match3.Runtime.Swapping
             if (_swappingConditions.Any(swappingCondition => !swappingCondition.IsSwapPossible(position, targetPosition)))
             {
                 OnFailedSwap?.Invoke();
+                // Debug.Log($"Swapping {position} with {targetPosition} Failed");
                 return;
             }
 
@@ -35,6 +36,7 @@ namespace AAA.SDKs.Match3.Runtime.Swapping
                 (typeProviders[targetPosition.x, targetPosition.y], typeProviders[position.x, position.y]);
 
             _tileProvider.InvokeOnGridChanged();
+            // Debug.Log($"Swapping {position} with {targetPosition} Succeeded");
             OnSuccessfulSwap?.Invoke();
         }
     }
